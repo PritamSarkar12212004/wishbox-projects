@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/show/styles.css" />
+    <link rel="stylesheet" href="/stylesheet/show/Responsive.css">
+    <title>Wishbox</title>
+  </head>
+  <body>
+    <%- include("../components/nav.ejs") %>
+    <div class="show">
+      <div class="showLeft">
+        <img src="<%= ShowData.mainImg %>" alt="" />
+      </div>
+      <div class="showRight">
+        <h1><%= ShowData.title %></h1>
+        <span
+          ><%= ShowData.reting%>
+          <img src="/Asests/Icons/star.png" alt="" /></span
+        ><span><%= ShowData.reviews %>:- Reviews</span>
+        <span><%=ShowData.categery%>:- Categery</span>
+        <p><%= ShowData.deteles %></p>
+        <div class="category">
+          <h1>Items</h1>
+          <div class="catitams">
+
+          <% categeryItams.forEach(element => { %> <%- include
+          ("../components/categuryItems.ejs") %> <% }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%-include("../components/footer.ejs") %>
+  </body>
+</html>

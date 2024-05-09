@@ -1,0 +1,27 @@
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .card {
+    max-width: 31vw;
+    height: 30vh;
+    margin-bottom: 6vh
+  }
+  .cardlist {
+    justify-content: space-evenly;
+  }
+  #price {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .card{
+    width:45vw;
+    height: 25vh;
+    margin-bottom: 6vh
+  }
+  #price{
+    font-size: 3vw;
+  }
+  .star{
+  max-width: 11vw !important;
+  }
+
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+form > button {
+  background-color: transparent;
+  padding: 0;
+  margin: 2vw;
+  border: none;
+  outline: none;
+}
+.catcards {
+  height: 25vh;
+  width: 15vw;
+}
+.catcards>img{
+    width: 100%;
+    border-radius: 10px;
+    height: 90%;
+}
+.catcards>h4{
+    opacity: 0.8;
+    text-align: start;
+}

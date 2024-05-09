@@ -1,0 +1,16 @@
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .catcards{
+        /* border: 1px solid red; */
+        max-width: 30vw;
+        margin: 3vw;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+    .catcards{
+        /* border: 1px solid red; */
+        width: 40vw;
+        margin: 3vw;
+        /* border: 1px solid red; */
+    }
+}

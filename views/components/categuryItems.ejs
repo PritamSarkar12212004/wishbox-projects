@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/categuryItems/styles.css" />
+    <link rel="stylesheet" href="/stylesheet/categuryItems/Responsive.css">
+    <title>wishbox</title>
+  </head>
+  <body>
+    <% categeryItams.forEach(element => { %>
+    <form action="/show/<%= element._id%>">
+      <button>
+        <div class="catcards">
+          <img src="<%= element.mainImg %>" alt="" />
+          <h4><%= element.title %></h4>
+        </div>
+      </button>
+    </form>
+
+    <% }) %>
+  </body>
+</html>

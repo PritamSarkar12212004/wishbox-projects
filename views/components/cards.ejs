@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/cards/styles.css" />
+    <link rel="stylesheet" href="/stylesheet/cards/ResponsiveStyles.css" />
+    <title>cards</title>
+  </head>
+  <body>
+    <div class="cardlist">
+      <% CardData.forEach(element => { %>
+      <form action="/show/<%= element._id %>" method="get">
+        <button>
+          <div class="card">
+            <img src="<%= element.mainImg %>" alt="" />
+            <div class="cardIno">
+              <div class="cLeft">
+                <h4 id="price"><%= element.title %></h4>
+                <h4 class="star">
+                  <%= element.reting %><img
+                    src="/Asests/Icons/star.png"
+                    alt=""
+                  />
+                </h4>
+              </div>
+              <div class="cRight">
+                <h3><%= element.price %>₹</h3>
+              </div>
+            </div>
+          </div>
+        </button>
+      </form>
+      <% }) %>
+    </div>
+  </body>
+</html>

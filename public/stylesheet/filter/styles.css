@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.filter{
+    height: 22vh;
+    width: 100%;
+    background-image: url("/Asests/background/christmas-concept-with-stars.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    color:  white;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+.filterInfo{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.filterInfo>h1>a{
+    color: white;
+    text-decoration: none;
+}
+.filter>select{
+    width: 14vw;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.815);
+    outline: none;
+    padding-left: 1.2vw;
+}
