@@ -61,7 +61,7 @@ app.use("/admin", adminRoutes);
 app.use((err, req, res, next) => {
   console.error("An error occurred:", err);
   res.status(500);
-  res.render("/layouts/Error.ejs");
+  // res.render("./layouts/Error.ejs");
 });
 
 module.exports = app;

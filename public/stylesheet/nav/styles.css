@@ -73,3 +73,15 @@ nav > input {
 .right > img {
   height: 80%;
 }
+.right >form {
+  height: 100%;
+}
+.right >form>button {
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.right >form>button>img {
+  height: 80%;
+
+}
