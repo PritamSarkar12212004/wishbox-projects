@@ -12,4 +12,5 @@ body {
     height: 60vh;
     width: 75vw;
     border: 1px solid red;
+    overflow: hidden;
 }
