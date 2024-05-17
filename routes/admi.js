@@ -10,6 +10,9 @@ router.get("/", async (req, res) => {
   let CardData = await cards.find();
   let AdverData = await Adver.find();
   let userData = await user.find();
-  res.render("layouts/Admain.ejs", { CardData, postar, AdverData,userData });
+  res.render("layouts/Admain.ejs", { CardData, postar, AdverData, userData });
+});
+router.get("/Cards", (req, res) => {
+  res.render("./layouts/adminCards.ejs")
 });
 module.exports = router;
