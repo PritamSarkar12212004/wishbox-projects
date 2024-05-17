@@ -17,6 +17,7 @@ body {
 .cards {
   width: 95%;
   height: 100vh;
+
   /* border: 1px solid red; */
 }
 .progressar {
@@ -27,47 +28,92 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.card{
-    height: 70%;
-    width: 30%;
-    /* border: 1px solid red; */
-    border-radius: 20px;
-    display: flex;
+.card {
+  height: 70%;
+  width: 30%;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  display: flex;
 }
-.logo{
-    width: 50%;
+.logo {
+  width: 50%;
+  height: 100%;
+  background-color: #ebe1e1;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: blueviolet;
+}
+
+.logo > img {
+  height: 40%;
+}
+
+.info {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  background-color: #9a77c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info > h1 {
+  font-size: 7vw;
+  color: white;
+}
+.ctwo {
+  background-color: #09aee6;
+}
+.cthree {
+  background-color: #3e65d9;
+}
+.notification {
+  height: 59.5vh;
+  width: 70%;
+  /* border: 1px solid red; */
+  margin-left: 1.5vw;
+  border-radius: 30px;
+  background-color: #16d79e;
+  
+  display: flex;
+}
+.user{
+    width: 40%;
     height: 100%;
-    background-color: #ebe1e1;
-    border-radius: 20px 0 0 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+    flex-direction: column;
+    background-color: rgb(230, 221, 221);
+}
+.user>img{
+    width: 70%;
+}
+.newuser{
+    width: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.2vw;
+}
+.u{
+    width: 90%;
+    margin-bottom: 3vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    color: blueviolet;
+    gap: 1vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
+.u>h2{
+    text-transform: capitalize;
 
-.logo>img{
-    height: 40%;
 }
-
-.info{
-    width: 50%;
-    height: 100%;
-    border-radius: 0 20px 20px 0;
-    background-color: #9a77c4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info>h1{
-   font-size: 7vw;
-    color: white;
-}
-.ctwo{
-    background-color: #09aee6 ;
-}
-.cthree{
-    background-color: #3E65D9;
+.newuser::-webkit-scrollbar{
+    width: 0px;
 }

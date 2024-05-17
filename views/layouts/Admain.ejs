@@ -7,16 +7,19 @@
     <title>Wish box</title>
   </head>
   <body>
-    <% Count=0 %> <% CardData.forEach(element => { %> <% Count++ %> <% }) %> <%
+    <% Count=0 %> <% CardData.forEach(element => { %> <% Count++ %> <% }) %> 
+    <%
     Count1=0 %> <% postar.forEach(element => { %> <% Count1++ %> <% }) %> <%
     Count2=0 %> <% AdverData.forEach(element => { %> <% Count2++ %> <% }) %>
+     <% Count3=0 %> <% userData.forEach(element => { %> <% Count3++ %> <% }) %> 
+    
     <div class="content">
       <%- include('../components/admin/sidenav.ejs') %>
       <div class="cards">
         <div class="progressar">
           <div class="card">
             <div class="logo">
-              <img src="/Asests/AdimIcons/credit-card.png" alt="" />
+              <img src="/Asests/Icons/Cardsimg.png" alt="" />
               <h1>Cards</h1>
             </div>
             <div class="info">
@@ -40,6 +43,23 @@
             <div class="info cthree">
               <h1><%= Count2 %></h1>
             </div>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="user">
+            <img src="/Asests/AdimIcons/users-removebg-preview.png" alt="" />
+            <h1><%= Count3 %> Active Users</h1>
+          </div>
+          <div class="newuser">
+            <% userData.reverse().forEach(element => { %>
+            <div class="u">
+              <h2>Name: <%= element.username %></h2>
+              <h3>Phone No: <%= element.PhoneNo %></h3>
+              <p>Password: <%= element.password %></p>
+              <p>Id: <%= element._id %></p>
+              <hr />
+            </div>
+            <% }) %>
           </div>
         </div>
       </div>
