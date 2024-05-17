@@ -3,13 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheet/admin/Main/styles.css">
+    <link rel="stylesheet" href="/stylesheet/admin/Main/styles.css" />
     <title>Wish box</title>
   </head>
   <body>
+    <% Count=0 %> <% CardData.forEach(element => { %> <% Count++ %> <% }) %> <%
+    Count1=0 %> <% postar.forEach(element => { %> <% Count1++ %> <% }) %> <%
+    Count2=0 %> <% AdverData.forEach(element => { %> <% Count2++ %> <% }) %>
     <div class="content">
-      <%- include('../components/admin/sidenav.ejs') %> <%-
-      include('../components/admin/cards.ejs') %>
+      <%- include('../components/admin/sidenav.ejs') %>
+      <div class="cards">
+        <div class="progressar">
+          <div class="card">
+            <div class="logo">
+              <img src="/Asests/AdimIcons/credit-card.png" alt="" />
+              <h1>Cards</h1>
+            </div>
+            <div class="info">
+              <h1><%= Count %></h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="/Asests/Icons/poster.png" alt="" />
+              <h1>Posters</h1>
+            </div>
+            <div class="info ctwo">
+              <h1><%= Count1 %></h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="/Asests/Icons/advertisemen.png" alt="" />
+              <h1>Cards</h1>
+            </div>
+            <div class="info cthree">
+              <h1><%= Count2 %></h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="/stylesheet/admin/Main/scripts.js"></script>
   </body>
 </html>

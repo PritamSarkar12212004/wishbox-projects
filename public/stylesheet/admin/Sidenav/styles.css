@@ -24,7 +24,6 @@ nav > form > button {
   outline: none;
   cursor: pointer;
 }
-nav > form > button>img{
-    height: 7vh;
-
+nav > form > button > img {
+  height: 7vh;
 }

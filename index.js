@@ -4,7 +4,8 @@ const ejsMate = require("ejs-mate");
 const path = require("path");
 const mongoose = require("mongoose");
 require("dotenv").config();
-//! require mongoose
+//! require middleware
+
 
 //! require routes
 const indexRoutes = require("./routes/index.js");
@@ -52,6 +53,9 @@ app.engine("ejs", ejsMate);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
+
+
+//? use middleware
 
 //? routes
 app.use("/", indexRoutes);
