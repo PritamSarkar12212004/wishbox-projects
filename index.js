@@ -9,6 +9,7 @@ require("dotenv").config();
 //! require routes
 const indexRoutes = require("./routes/index.js");
 const adminRoutes = require("./routes/admi.js");
+const CURD = require("./routes/CURD.js");
 
 //* express server
 const app = express();
@@ -58,6 +59,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //? routes
 app.use("/", indexRoutes);
 app.use("/admin", adminRoutes);
+app.use("/CURD", CURD);
 
 // Error handling middleware
 app.use((err, req, res, next) => {

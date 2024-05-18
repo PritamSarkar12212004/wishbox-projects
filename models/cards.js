@@ -15,10 +15,6 @@ const cardSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  delevery: {
-    type: String,
-    required: true,
-  },
   reting: {
     type: Number,
     required: true,

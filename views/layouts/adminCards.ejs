@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/admin/adminCards/styles.css" />
     <title>Wish Box</title>
-</head>
-<body>
-    <%- include('../components/admin/sidenav.ejs') %>
-</body>
+  </head>
+  <body>
+    <div class="content">
+      <%- include('../components/admin/sidenav.ejs') %>
+      <div class="MainContent">
+        <% CardData.forEach(element => { %>
+        <div class="wrapper">
+          <div class="container">
+            <div class="top">
+              <img src="<%= element.mainImg %>" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <h1><%= element.price%>₹</h1>
+                  <p>£250</p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <h1>Chair</h1>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">Edit</i></div>
+            <div class="contents">
+              <form action="/CURD/Delete/<% element._id %>" method="get">
+                
+                <button type="submit">Delete</button>
+              </form>
+              <form action="">
+                <button type="submit">Edit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
 </html>
