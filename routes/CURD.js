@@ -14,4 +14,8 @@ router.get("/add", (req, res) => {
   res.render("layouts/addCards.ejs");
 });
 
+//! Add Cards
+router.post("/ADDCard", (req, res) => {
+l
+});
 module.exports = router;

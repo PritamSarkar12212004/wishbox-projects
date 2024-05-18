@@ -11,19 +11,51 @@
       <%- include('../components/admin/sidenav.ejs') %>
       <div class="maincontent">
         <div class="left">
-          <form action="">
-            <input type="text" placeholder="Images URl" required id="img" />
-            <input type="text" name="" id="title" placeholder="Title">
-            <input type="number" placeholder="Price" required id="price" />
+          <form action="/CURD/ADDCard" method="post">
+            <input
+              type="text"
+              placeholder="Images URl"
+              required
+              id="img"
+              name="data[mainImg]"
+            />
+            <input
+              type="text"
+              name=""
+              id="title"
+              placeholder="Title"
+              name="data[title]"
+            />
+            <input
+              type="number"
+              placeholder="Price"
+              required
+              id="price"
+              name="data[price]"
+            />
 
-            <input type="number" placeholder="Reting" required id="Reting" />
-            <input type="reviews" placeholder="Reviews" required id="Reviews" />
-            <select name="" id="categiri">
+            <input
+              type="number"
+              placeholder="Reting"
+              required
+              id="Reting"
+              name="data[reting]"
+            />
+            <input
+              type="reviews"
+              placeholder="Reviews"
+              name="data[Reviews]"
+              required
+              id="Reviews"
+              name="data[reviews]"
+            />
+            <select name="" id="categiri" name="data[categery]">
               <option value="butturflay">butturflay</option>
               <option value="kite">kite</option>
               <option value="star">star</option>
             </select>
-            <textarea name="" id="detels" required> </textarea>
+            <textarea name="" id="detels" required name="data[deteles]">
+            </textarea>
             <button type="submit">Create</button>
           </form>
         </div>
