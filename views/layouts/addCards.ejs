@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/admin/Addcard/styles.css" />
+    <title>Wish Box</title>
+  </head>
+  <body>
+    <div class="content">
+      <%- include('../components/admin/sidenav.ejs') %>
+      <div class="maincontent">
+        <div class="left">
+          <form action="">
+            <input type="text" placeholder="Images URl" required id="img" />
+            <input type="text" name="" id="title" placeholder="Title">
+            <input type="number" placeholder="Price" required id="price" />
+
+            <input type="number" placeholder="Reting" required id="Reting" />
+            <input type="reviews" placeholder="Reviews" required id="Reviews" />
+            <select name="" id="categiri">
+              <option value="butturflay">butturflay</option>
+              <option value="kite">kite</option>
+              <option value="star">star</option>
+            </select>
+            <textarea name="" id="detels" required> </textarea>
+            <button type="submit">Create</button>
+          </form>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="img">
+              <img class="imgss" src="" alt="" />
+            </div>
+            <div class="detels">
+              <h3 class="one"></h3>
+              <h3 class="two"></h3>
+              <h3 class="three"></h3>
+              <h3 class="foure"></h3>
+              <h3 class="five"></h3>
+              <p class="six"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/stylesheet/admin/Addcard/script.js"></script>
+  </body>
+</html>

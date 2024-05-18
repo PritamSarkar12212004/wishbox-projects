@@ -2,6 +2,7 @@
 const express = require("express");
 const ejsMate = require("ejs-mate");
 const path = require("path");
+const methodOverride = require("method-override");
 const mongoose = require("mongoose");
 require("dotenv").config();
 //! require middleware
@@ -55,6 +56,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 //? use middleware
+app.use(methodOverride(`_method`));
 
 //? routes
 app.use("/", indexRoutes);

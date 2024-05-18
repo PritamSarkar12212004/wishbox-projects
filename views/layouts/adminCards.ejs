@@ -36,8 +36,10 @@
           <div class="inside">
             <div class="icon"><i class="material-icons">Edit</i></div>
             <div class="contents">
-              <form action="/CURD/Delete/<% element._id %>" method="get">
-                
+              <form
+                action="/CURD/Delete/<%= element.id %>?_method=PUT"
+                method="post"
+              >
                 <button type="submit">Delete</button>
               </form>
               <form action="">
@@ -47,6 +49,13 @@
           </div>
         </div>
         <% }) %>
+        <div class="add">
+          <form action="/CURD/Add" method="get">
+            <button>
+              <img src="/Asests/AdimIcons/add-button.png" alt="" />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
