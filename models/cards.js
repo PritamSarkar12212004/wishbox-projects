@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 const cardSchema = new mongoose.Schema({
   mainImg: {
     type: String,
-    
-    required: true,
+    default:"https://i.pinimg.com/564x/63/59/89/63598949eee0333f0873634b0096d76f.jpg"
   },
   img1: String,
   Img2: String,
