@@ -1,8 +1,10 @@
 const express = require("express");
 const Cards = require("../models/cards");
+const { render } = require("..");
 const router = express.Router();
 
 //* main home page
+
 router.get("/", async (req, res) => {
   let CardData = await Cards.find();
   res.render("layouts/home.ejs", { CardData });

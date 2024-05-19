@@ -16,6 +16,19 @@ router.get("/add", (req, res) => {
 
 //! Add Cards
 router.post("/ADDCard", (req, res) => {
-l
+  let { mainImg, title, price, reting, reviews, categery, deteles } =
+    req.body.data;
+  let newCard = new user({
+    mainImg,
+    img1: "",
+    title,
+    price,
+    reting,
+    reviews,
+    categery,
+    deteles,
+  });
+  newCard.save();
+  res.redirect("/admin/Cards");
 });
 module.exports = router;
