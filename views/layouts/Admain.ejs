@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheet/admin/Main/styles.css" />
+    <link rel="stylesheet" href="/stylesheet/admin/Main/responsive.css" />
     <title>Wish box</title>
   </head>
   <body>
+    <div class="ham"><%- include('../components/admin/ham.ejs') %></div>
+
     <% Count=0 %> <% CardData.forEach(element => { %> <% Count++ %> <% }) %> <%
     Count1=0 %> <% postar.forEach(element => { %> <% Count1++ %> <% }) %> <%
     Count2=0 %> <% AdverData.forEach(element => { %> <% Count2++ %> <% }) %> <%
     Count3=0 %> <% userData.forEach(element => { %> <% Count3++ %> <% }) %>
 
     <div class="content">
-      <%- include('../components/admin/sidenav.ejs') %>
+      <div class="sidenav">
+        <%- include('../components/admin/sidenav.ejs') %>
+      </div>
       <div class="cards">
         <div class="progressar">
           <div class="card">
@@ -44,21 +49,23 @@
             </div>
           </div>
         </div>
-        <div class="notification">
-          <div class="user">
-            <img src="/Asests/AdimIcons/users-removebg-preview.png" alt="" />
-            <h1><%= Count3 %> Active Users</h1>
-          </div>
-          <div class="newuser">
-            <% userData.reverse().forEach(element => { %>
-            <div class="u">
-              <h2>Name: <%= element.username %></h2>
-              <h3>Phone No: <%= element.PhoneNo %></h3>
-              <p>Password: <%= element.password %></p>
-              <p>Id: <%= element._id %></p>
-              <hr />
+        <div class="noti">
+          <div class="notification">
+            <div class="user">
+              <img src="/Asests/AdimIcons/users-removebg-preview.png" alt="" />
+              <h1><%= Count3 %> Active Users</h1>
             </div>
-            <% }) %>
+            <div class="newuser">
+              <% userData.reverse().forEach(element => { %>
+              <div class="u">
+                <h2>Name: <%= element.username %></h2>
+                <h3>Phone No: <%= element.PhoneNo %></h3>
+                <p>Password: <%= element.password %></p>
+                <p>Id: <%= element._id %></p>
+                <hr />
+              </div>
+              <% }) %>
+            </div>
           </div>
         </div>
       </div>

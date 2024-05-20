@@ -8,6 +8,9 @@ body {
   height: 100%;
   width: 100%;
 }
+.ham {
+  display: none;
+}
 .content {
   height: 100vh;
   width: 100vw;
@@ -17,23 +20,20 @@ body {
 .cards {
   width: 95%;
   height: 100vh;
-
-  /* border: 1px solid red; */
 }
 .progressar {
   height: 40vh;
   width: 100%;
-  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .card {
-  height: 70%;
-  width: 30%;
-  /* border: 1px solid red; */
+  height: 15vw;
+  width: 25vw;
   border-radius: 20px;
   display: flex;
+  font-size: 1vw;
 }
 .logo {
   width: 50%;
@@ -72,48 +72,56 @@ body {
 .cthree {
   background-color: #3e65d9;
 }
+.noti {
+  height: 58vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .notification {
-  height: 59.5vh;
+  height: 60%;
   width: 70%;
-  /* border: 1px solid red; */
   margin-left: 1.5vw;
   border-radius: 30px;
   background-color: #16d79e;
-  
   display: flex;
 }
-.user{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px 0 0 20px;
-    flex-direction: column;
-    background-color: rgb(230, 221, 221);
-}
-.user>img{
-    width: 70%;
-}
-.newuser{
-    width: 60%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 1.2vw;
-}
-.u{
-    width: 90%;
-    margin-bottom: 3vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-.u>h2{
-    text-transform: capitalize;
+.user {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+  flex-direction: column;
+  background-color: rgb(230, 221, 221);
 
+  font-size: 1vw;
 }
-.newuser::-webkit-scrollbar{
-    width: 0px;
+.user > img {
+  height: 80%;
+}
+.newuser {
+  width: 60%;
+  overflow-x: hidden;
+  
+  overflow-y: auto;
+  padding: 1.2vw;
+  font-size: 1.2vw;
+}
+.u {
+  width: 90%;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.u > h2 {
+  text-transform: capitalize;
+}
+.newuser::-webkit-scrollbar {
+  width: 0px;
 }

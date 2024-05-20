@@ -1,0 +1,20 @@
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  nav {
+    width: 15vw;
+    position: absolute;
+    gap: 15%;
+    left: -100%;
+    z-index: 2;
+
+  }
+  nav > form {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+
+  nav{
+    position: absolute;
+    left: -100%;
+  }
+}
