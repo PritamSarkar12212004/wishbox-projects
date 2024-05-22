@@ -1,0 +1,27 @@
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+    .maincontent{
+        flex-direction: column ;
+        /* border-radius: 1px solid red; */
+        width: 100vw;
+    }
+    .left{
+        width: 100%;
+       
+    }
+    .left > form{
+        width: 80%;
+
+    }
+    .left > form>input{
+        font-size: 4vw    ;
+        
+    }
+    .left > form > button{
+        width: 40%;
+        font-size: 3.2vw;
+    }
+    .right{
+        display: none;
+    }
+
+}
