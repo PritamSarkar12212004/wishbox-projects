@@ -8,12 +8,13 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .add {
   height: 70px;
   width: 70px;
   position: absolute;
   bottom: 10px;
-  transform: translate(-50%);
+  transform: translate(-50% -50% );
 }
 .add>form{
   height: 100%;
@@ -39,7 +40,7 @@ body {
 }
 .MainContent {
   height: 100vh;
-  width: 95%;
+  width: 100%;
   padding: 1.2vw;
   background-color: rgb(228, 238, 238);
   display: flex;

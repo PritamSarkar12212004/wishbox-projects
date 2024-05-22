@@ -14,6 +14,8 @@ body {
 .content {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
 }
@@ -105,7 +107,7 @@ body {
 .newuser {
   width: 60%;
   overflow-x: hidden;
-  
+
   overflow-y: auto;
   padding: 1.2vw;
   font-size: 1.2vw;

@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.ham{
+  
+  display: none;
+}
 html,
 body {
   height: 100%;
@@ -18,6 +22,7 @@ nav {
   gap: 5vw;
   padding: 3vw 0;
   justify-content: center;
+  z-index: 22;
 }
 nav>form{
   width: 100%;
