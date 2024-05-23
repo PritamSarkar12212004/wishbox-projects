@@ -1,0 +1,16 @@
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  body > a {
+    display: flex;
+    height: 15vw;
+    position: fixed;
+    right: 2vw;
+    bottom: 2vw;
+  }
+  body > a > img {
+    height: 100%;
+    width: 100%;
+  }
+  body > a :active{
+    background-color: transparent;
+  }
+}
