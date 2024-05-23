@@ -73,15 +73,81 @@ nav > input {
 .right > img {
   height: 80%;
 }
-.right >form {
+.right > form {
   height: 100%;
 }
-.right >form>button {
+.right > form > button {
   height: 100%;
   border: none;
   outline: none;
 }
-.right >form>button>img {
+.right > form > button > img {
   height: 80%;
-
+}
+.loginForm {
+  height: 30vw;
+  padding: 2vw;
+  width: 50vw;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #1f3bb7,
+    #563cc9,
+    #8238d8,
+    #ac2ee3,
+    #d612eb
+  );
+  position: absolute;
+  display: flex;
+  right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adminImg {
+  height: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.adminImg > img {
+  height: 100%;
+}
+.adminLogin {
+  height: 80%;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid blac k; */
+  color: white;
+  /* display: none; */
+}
+.adminLogin > form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 2vw;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 2vw;
+}
+.adminLogin > form > input {
+  height: 3vw;
+  width: 70%;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(212, 199, 199);
+  border-radius: 15px;
+  padding-left: 2vw;
+}
+.adminLogin > form > button {
+  width: 50%;
+  border-radius: 15px;
+  background-color: rgb(42, 185, 42);
+  font-size: 1.2vw;
+  height: 3vw;
+  color: white;
 }

@@ -21,10 +21,22 @@
       </div>
       <input type="text" name="" id="" placeholder="search..." />
       <div class="right">
-        <form action="/admin" target="_blank">
-          <button><img src="/Asests/Icons/user.png" alt="" /></button>
-        </form>
+        <img class="admin" src="/Asests/Icons/user.png" alt="" />
       </div>
     </nav>
+    <div class="loginForm">
+      <div class="adminImg">
+        <img src="/Asests/AdimIcons/admin.png" alt="" />
+      </div>
+      <div class="adminLogin">
+        <h1>Admin Page</h1>
+        <form action="/admin/ckeck" method="post">
+          <input type="text" name="username" placeholder="Phone" />
+          <input type="password" name="password" placeholder="Password" />
+          <button>LogIn</button>
+        </form>
+      </div>
+    </div>
+    <script src="/stylesheet/nav/script.js"></script>
   </body>
 </html>

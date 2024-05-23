@@ -16,7 +16,7 @@ router.get("/show/:id", async (req, res) => {
   //! category making
   let cate = ShowData.categery;
   let categeryItams = await Cards.find({ categery: cate });
-  res.render("../components/categuryItems.ejs", { categeryItams });
+  // res.render("../components/categuryItems.ejs", { categeryItams });
   res.render("layouts/show.ejs", { ShowData, categeryItams });
 });
 
