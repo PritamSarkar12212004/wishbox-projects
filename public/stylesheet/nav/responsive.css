@@ -66,6 +66,7 @@
   .right {
     gap: 2vw;
     padding: 0;
+    padding-right: 3vw;
   }
   .right > img {
     height: 100%;
